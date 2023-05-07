@@ -1,0 +1,464 @@
+/* CSS Document */
+
+.cs_frame_box
+{
+	width:100%;
+	height:100%;
+	/* width:1380px;
+	height:960px; */
+	margin-left:220px;
+	margin-top:45px;
+	font-size:16px;
+	overflow:auto;
+	background-color:#fff;
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.cs_frame 
+{
+	width:100%;
+	height:99%;
+	padding:35px;
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;	
+}
+
+.cs_container
+{
+	display:flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+	width:100%;
+	height:95%;
+}
+
+.cs_datatable 
+{
+	width:100%;
+	table-layout:fixed;
+	border:1px solid #cfcfcf;
+	box-shadow:0px 5px 3px 3px #ebebeb;
+	background-color:#fff;
+	text-align:center;
+	font-size:12px;
+	margin-top:10px;
+}
+
+.cs_datatable th 
+{
+	color:#fff;
+	font-weight:bold;
+	font-size: 13px;
+	height:35px;
+	border:1px solid #cfcfcf;
+}
+
+.cs_datatable td 
+{
+	height:25px;
+	border:1px solid #cfcfcf;
+} 
+
+.cs_datatable tr:hover
+{
+	background-color: #f7f7f7;
+}
+
+.cs_selectBox 
+{
+	width:100%;
+	margin-bottom:20px;
+	position:relative;
+}
+
+.cs_selectBox .cs_unit 
+{
+	font-size:12px;
+	color:#939393;
+	font-weight:bold;
+}
+
+.cs_selectBox .cs_date 
+{
+	position:absolute;right:0px;top:-6px;
+}
+
+.cs_search
+{
+	cursor:pointer;
+	display:inline-block;
+	width: 43px;
+	height: 22px;
+	text-align: center;
+	line-height: 24px;
+	background-color: #efefef;
+	border: 1px solid black;
+	border-radius: 4px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	margin-left:10px;
+}
+
+.cs_search:hover
+{
+	background-color:#e5e5e5;
+}
+
+.cs_content
+{
+	width: 99%;
+	height: 200px;
+	resize: none;
+	line-height: 1.5em;
+	overflow-y:scroll;
+}
+
+.cs_btnBox
+{
+	width:100%; 
+	display:flex;
+	justify-content: center;
+}
+
+.cs_btn
+{
+	width:150px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 15px;
+	display:inline-block;
+	background-color:#36b8f4;
+	font-size: 12px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	color: #fff;
+}	
+
+.cs_btn:hover
+{
+	background-color:#2DA5DC;
+}
+
+.cs_page
+{	
+	width: 99%;
+	text-align: center;
+	margin-top: 25px;
+
+	display:flex;
+	justify-content: center;
+}
+
+.cs_page div
+{
+	text-decoration: none;
+	border: 1px solid #ccc;
+	padding: 4px 8px;
+	margin-right: 2px;
+	font-size: 12px;
+	color: #333;
+	cursor:pointer;
+}
+
+.cs_page div:last-child
+{
+	margin-right: 0px;
+}
+
+.cs_page .active, .cs_pages:hover
+{
+	background-color:#ccc;
+}
+
+.cs_selectBox .cs_excel 
+{
+	width: 70px;	
+	height: 25px;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	line-height:23px;
+	color: #fff;
+	background-color: #333;
+	cursor: pointer;
+	margin-left:10px;
+	vertical-align: top;
+}
+
+.cs_tab { white-space: pre; }
+.cs_helpIcon { font-size:10px; }
+#id_helpForm
+{
+	width:100%;
+	margin-top:2%;
+	color:#6d6d6d;
+}
+#id_help
+{	
+    display: flex;
+    align-items: center;
+	cursor:pointer;
+}
+#id_helpMessage
+{
+	margin-top:1.5px;
+}
+.cs_help
+{
+	border:1px solid #d9d9d9;
+	padding:15px;
+	display:none;
+	margin-top:10px;
+	font-size:14px;
+}
+.cs_help .cs_smallfont
+{
+	font-size:13px;
+}
+.cs_helpPopUp
+{
+	position:absolute;
+	display:none;
+	border: 1px solid #c7c7c7;
+	padding: 20px;
+	background-color:#b0e1f2;
+}
+
+/*****************************************************************************/
+/* Broad Document CSS */
+.cs_broadbox
+{
+	height: 100%;
+}
+
+#ui-datepicker-div
+{
+	font-size: 14px !important;	
+}
+
+.graph, .table{
+	display: inline-block;
+	height: calc(100% - 85px );	
+	margin-top: 15px;
+	vertical-align: top;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.graph{
+	padding-top: 35px;
+	margin-right: 10px;	
+	width: 60%;
+}
+
+.table{
+	margin-left: 10px;
+	width: calc(40% - 10px );
+}
+
+.graph .gList .date{
+	position: relative;
+	display: inline-block;
+	width: 9%;
+	height: 100%;
+	border-right: 1px solid #ccc;	
+	border-bottom: 1px solid #ccc;
+		
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.data{
+	position: relative;
+	display: inline-block;
+	width: 90%;
+	height: 100%;	
+	border-bottom: 1px solid #ccc;
+	vertical-align: top;
+		
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.graph .gList .date span{
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin-top: -10px;
+	margin-left: -20px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.barBox{
+	position:absolute;
+	display: inline-block;
+	width: 100%;
+	height: 70%;
+	top: 15%;
+	overflow: hidden;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.bar{
+	height: 100%;
+	display: inline-block;
+	position:relative;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.bar span{
+	position: absolute;
+	height: 20px;
+	width: 30px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px; 
+	font-weight: bold;
+	color: #fff;
+	
+	right: 50%;
+	top: 50%;
+	margin-top: -10px;
+	margin-right: -15px;
+}
+
+.bar.general{
+	background-color: #DCCDE3;
+}
+
+.bar.level1{
+	background-color: #2359c4;
+}
+
+.bar.level2{
+	background-color: #01b56e;
+}
+
+.bar.level3{
+	background-color: #f5c932;
+}
+
+.bar.level4{
+	background-color: #da3539;
+}
+
+/*****************************************************************************/
+/* Display Document CSS */
+.note-editable
+{
+	padding: 0px !important;	
+}
+
+.cs_loading
+{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.47);
+	z-index: 100;
+}
+
+.cs_loading .cs_message
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 100px;
+	background-color: #fff;	
+	font-size: 24px;
+	text-align:center;
+	
+	margin-left: -150px;
+	margin-top: -50px;
+	
+	padding-top: 15px;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.13);
+	cursor: default;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input 
+{
+	border:1px solid #d9d9d9;	
+}
+
+/*****************************************************************************/
+/* SMS Document CSS */
+.cs_smsBox
+{
+	height: 48%;
+	background-color:#fff;
+}
+
+/*****************************************************************************/
+/* Report Document CSS */
+.cs_report
+{
+	position:relative;
+	width:55%;
+	margin:50px auto;
+}
+.cs_header
+{
+	width:100%;
+	text-align:center;
+	font-size:22px;
+	position:relative;
+}
+.cs_header .cs_logo
+{
+	position:absolute;right:120px;
+}
+.cs_kind
+{
+	margin-top:15px;
+}
