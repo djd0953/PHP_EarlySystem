@@ -1,5 +1,3 @@
-/*
-
 	version	: v1.0
 	date	: 2023-03-24
 	author	: JHJ
@@ -378,5 +376,3 @@
 				3) Files
 				4) CSS
 				5) Java Script
-
-*/
